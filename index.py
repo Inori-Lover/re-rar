@@ -1,3 +1,6 @@
 #!/usr/bin/env python
+# coding=utf-8
 
-print('Hello World!')
+from zipfile import ZipFile
+with ZipFile("./sample/text.zip") as f:
+    print(f.filelist)
